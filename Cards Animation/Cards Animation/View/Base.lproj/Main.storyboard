@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="ViewController" customModule="Cards_Animation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MTW-IZ-FE3" customClass="AnimationView" customModule="Lottie">
+                                <rect key="frame" x="60" y="203" width="294" height="294"/>
+                                <color key="backgroundColor" name="SecondaryBG"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="MTW-IZ-FE3" secondAttribute="height" multiplier="1:1" id="Wj4-W9-2GL"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="credit-card"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q87-5G-2JB">
+                                <rect key="frame" x="40" y="742" width="334" height="60"/>
+                                <color key="backgroundColor" name="Button"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="AWL-Gd-7j7"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Show Cards">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="16"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="btn"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="showBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Htd-RZ-HfN"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payment" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qml-7V-87L">
+                                <rect key="frame" x="20" y="104" width="374" height="29"/>
+                                <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                <color key="textColor" name="Text"/>
+                                <color key="highlightedColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Bill $ 400" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dG4-54-Gc0">
+                                <rect key="frame" x="152.5" y="577" width="109" height="59"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="59" id="Ran-5g-PBf"/>
+                                    <constraint firstAttribute="width" constant="109" id="Wnf-Pr-IWN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
+                                <color key="textColor" name="Text"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="bill"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="BG"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Q87-5G-2JB" secondAttribute="bottom" constant="60" id="019-ud-GPY"/>
+                            <constraint firstItem="dG4-54-Gc0" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="4D5-1f-tNT"/>
+                            <constraint firstItem="MTW-IZ-FE3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="4oL-wX-tQF"/>
+                            <constraint firstItem="Qml-7V-87L" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="NtF-Ty-0qA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Q87-5G-2JB" secondAttribute="trailing" constant="40" id="SaK-aw-bX5"/>
+                            <constraint firstItem="Q87-5G-2JB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="bYk-9X-ZQy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MTW-IZ-FE3" secondAttribute="trailing" constant="60" id="cpQ-at-94E"/>
+                            <constraint firstItem="Qml-7V-87L" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ggt-NQ-CqB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Qml-7V-87L" secondAttribute="trailing" constant="20" id="lAa-1J-hDM"/>
+                            <constraint firstItem="MTW-IZ-FE3" firstAttribute="top" secondItem="Qml-7V-87L" secondAttribute="bottom" constant="70" id="u55-hX-5rY"/>
+                            <constraint firstItem="dG4-54-Gc0" firstAttribute="top" secondItem="MTW-IZ-FE3" secondAttribute="bottom" constant="80" id="zzW-O1-HDI"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="dn2-RH-EXT"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="animationView" destination="MTW-IZ-FE3" id="684-Xw-TzD"/>
+                        <outlet property="showBtn" destination="Q87-5G-2JB" id="oWJ-CW-F8D"/>
+                        <segue destination="YhB-40-eEy" kind="show" identifier="show" id="tVm-Zt-Bs0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="Gug-D4-lgo">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="YhB-40-eEy" customClass="SecondViewController" customModule="Cards_Animation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bOg-IT-Gki">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Bill $ 400" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rui-7e-uLr">
+                                <rect key="frame" x="154" y="104" width="106" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="106" id="ODr-Gw-pL6"/>
+                                    <constraint firstAttribute="height" constant="72" id="bIj-Wg-EEd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
+                                <color key="textColor" name="Text"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="bill"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V1o-9O-d2P">
+                                <rect key="frame" x="40" y="742" width="334" height="60"/>
+                                <color key="backgroundColor" red="0.2235329747" green="0.062753312290000002" blue="0.12547311189999999" alpha="0.30111785282362374" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="oje-Pa-cZo"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="vg3-3O-CwY"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemPinkColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Cancel">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="16"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="btn"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="cancelBtn:" destination="YhB-40-eEy" eventType="touchUpInside" id="PPW-hZ-LRT"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e2q-F6-HWp" customClass="ZLSwipeableView" customModule="ZLSwipeableViewSwift">
+                                <rect key="frame" x="24" y="208" width="366" height="480"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="cards"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ZU3-Nj-s1x"/>
+                        <color key="backgroundColor" name="BG"/>
+                        <constraints>
+                            <constraint firstItem="ZU3-Nj-s1x" firstAttribute="trailing" secondItem="V1o-9O-d2P" secondAttribute="trailing" constant="40" id="2A4-fP-7e0"/>
+                            <constraint firstItem="ZU3-Nj-s1x" firstAttribute="bottom" secondItem="V1o-9O-d2P" secondAttribute="bottom" constant="60" id="DDP-TT-2ow"/>
+                            <constraint firstItem="Rui-7e-uLr" firstAttribute="top" secondItem="ZU3-Nj-s1x" secondAttribute="top" constant="60" id="Lxn-eW-8e0"/>
+                            <constraint firstItem="e2q-F6-HWp" firstAttribute="leading" secondItem="ZU3-Nj-s1x" secondAttribute="leading" constant="24" id="WGI-jg-Ptc"/>
+                            <constraint firstItem="V1o-9O-d2P" firstAttribute="top" secondItem="e2q-F6-HWp" secondAttribute="bottom" constant="54" id="Wb6-JR-Diq"/>
+                            <constraint firstItem="V1o-9O-d2P" firstAttribute="leading" secondItem="ZU3-Nj-s1x" secondAttribute="leading" constant="40" id="hTg-Hf-fRk"/>
+                            <constraint firstItem="Rui-7e-uLr" firstAttribute="centerX" secondItem="ZU3-Nj-s1x" secondAttribute="centerX" id="r0m-dm-d9z"/>
+                            <constraint firstItem="ZU3-Nj-s1x" firstAttribute="trailing" secondItem="e2q-F6-HWp" secondAttribute="trailing" constant="24" id="sJY-Zc-uV3"/>
+                            <constraint firstItem="e2q-F6-HWp" firstAttribute="top" secondItem="Rui-7e-uLr" secondAttribute="bottom" constant="32" id="zyb-aV-uyq"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="uZE-WO-TzF"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="cancelBtn" destination="V1o-9O-d2P" id="hGZ-x9-hVK"/>
+                        <outlet property="cardsView" destination="e2q-F6-HWp" id="7Fs-m3-iAA"/>
+                        <segue destination="2oJ-Zi-P6A" kind="show" identifier="confirm" id="Opa-hX-OYd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ca4-fj-DEf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="931.88405797101461" y="145.98214285714286"/>
+        </scene>
+        <!--Third View Controller-->
+        <scene sceneID="r1d-7d-2Hc">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="2oJ-Zi-P6A" customClass="ThirdViewController" customModule="Cards_Animation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1MF-lr-8T2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Card" translatesAutoresizingMaskIntoConstraints="NO" id="oTd-vH-6da">
+                                <rect key="frame" x="53" y="183" width="302" height="423"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="oTd-vH-6da" secondAttribute="height" multiplier="307:430" id="JhA-fy-Ngp"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="cards"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Using: Utkarsh's CreditCard " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wrb-8o-32B">
+                                <rect key="frame" x="30" y="606" width="354" height="21.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" name="Text"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="bill"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirm Payment" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MMo-2U-wqo">
+                                <rect key="frame" x="20" y="104" width="374" height="29"/>
+                                <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                <color key="textColor" name="Text"/>
+                                <color key="highlightedColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="If4-zY-Ont">
+                                <rect key="frame" x="40" y="742" width="334" height="60"/>
+                                <color key="backgroundColor" name="Button"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="2lZ-Vr-mLH"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Pay $ 400">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="16"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="bill"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="payBtn:" destination="2oJ-Zi-P6A" eventType="touchUpInside" id="Nw0-pU-5l8"/>
+                                    <action selector="showBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fcq-ts-Vsu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mw6-fo-c6U">
+                                <rect key="frame" x="20" y="96.5" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="Zzj-67-ij9"/>
+                                    <constraint firstAttribute="height" constant="44" id="ngy-KX-fSr"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemPinkColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="xmark.circle.fill" catalog="system"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="btn"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="cancelBtn:" destination="2oJ-Zi-P6A" eventType="touchUpInside" id="i6T-id-Em3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0BQ-zf-zH7"/>
+                        <color key="backgroundColor" name="BG"/>
+                        <constraints>
+                            <constraint firstItem="oTd-vH-6da" firstAttribute="centerX" secondItem="0BQ-zf-zH7" secondAttribute="centerX" constant="-3" id="3P3-HX-VkQ"/>
+                            <constraint firstItem="0BQ-zf-zH7" firstAttribute="trailing" secondItem="wrb-8o-32B" secondAttribute="trailing" constant="30" id="3ql-hl-A1F"/>
+                            <constraint firstItem="If4-zY-Ont" firstAttribute="leading" secondItem="0BQ-zf-zH7" secondAttribute="leading" constant="40" id="CBn-fs-N8G"/>
+                            <constraint firstItem="MMo-2U-wqo" firstAttribute="top" secondItem="0BQ-zf-zH7" secondAttribute="top" constant="60" id="DD4-vV-awi"/>
+                            <constraint firstItem="wrb-8o-32B" firstAttribute="leading" secondItem="0BQ-zf-zH7" secondAttribute="leading" constant="30" id="Ech-dT-3Cg"/>
+                            <constraint firstItem="Mw6-fo-c6U" firstAttribute="centerY" secondItem="MMo-2U-wqo" secondAttribute="centerY" id="Ohd-1V-4vE"/>
+                            <constraint firstItem="wrb-8o-32B" firstAttribute="top" secondItem="oTd-vH-6da" secondAttribute="bottom" id="Pnf-Y7-nfO"/>
+                            <constraint firstItem="oTd-vH-6da" firstAttribute="top" secondItem="MMo-2U-wqo" secondAttribute="bottom" constant="50" id="Ta1-7d-nAH"/>
+                            <constraint firstAttribute="trailing" secondItem="If4-zY-Ont" secondAttribute="trailing" constant="40" id="dbW-9D-fzb"/>
+                            <constraint firstItem="Mw6-fo-c6U" firstAttribute="leading" secondItem="0BQ-zf-zH7" secondAttribute="leading" constant="20" id="jN6-1B-gql"/>
+                            <constraint firstItem="0BQ-zf-zH7" firstAttribute="trailing" secondItem="MMo-2U-wqo" secondAttribute="trailing" constant="20" id="lMo-22-wRb"/>
+                            <constraint firstItem="0BQ-zf-zH7" firstAttribute="bottom" secondItem="If4-zY-Ont" secondAttribute="bottom" constant="60" id="uPM-CN-Msg"/>
+                            <constraint firstItem="MMo-2U-wqo" firstAttribute="leading" secondItem="0BQ-zf-zH7" secondAttribute="leading" constant="20" id="wMl-lG-Ufi"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="NaK-xk-iJ3"/>
+                    <connections>
+                        <outlet property="cardImage" destination="oTd-vH-6da" id="j9P-XW-Rkn"/>
+                        <outlet property="cardLabel" destination="wrb-8o-32B" id="zkd-hw-zoc"/>
+                        <outlet property="payBtn" destination="If4-zY-Ont" id="y6G-2L-gqs"/>
+                        <segue destination="WXk-pV-ZJC" kind="show" identifier="success" id="XqO-zT-MFR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5hX-TO-ZOB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1674" y="139"/>
+        </scene>
+        <!--Final View Controller-->
+        <scene sceneID="hBZ-Yw-v6k">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="WXk-pV-ZJC" customClass="FinalViewController" customModule="Cards_Animation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lW3-oT-kXd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X25-Oa-YWG" customClass="AnimationView" customModule="Lottie">
+                                <rect key="frame" x="80" y="144" width="254" height="262.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="X25-Oa-YWG" secondAttribute="height" multiplier="30:31" id="sH3-jS-01m"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="payment-successful"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="bill"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dtN-E4-qwW">
+                                <rect key="frame" x="40" y="486.5" width="334" height="60"/>
+                                <color key="backgroundColor" name="SecondaryBG"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="3gm-NI-btr"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="JlF-dL-b5T"/>
+                                </constraints>
+                                <color key="tintColor" name="Button"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Back Home">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="16"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="btn"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="cancelBtn:" destination="YhB-40-eEy" eventType="touchUpInside" id="s9T-AL-Wyi"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="IIB-L0-pbf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Tcw-Pd-kNL"/>
+                        <color key="backgroundColor" name="BG"/>
+                        <constraints>
+                            <constraint firstItem="X25-Oa-YWG" firstAttribute="leading" secondItem="Tcw-Pd-kNL" secondAttribute="leading" constant="80" id="1fM-7o-8A3"/>
+                            <constraint firstItem="dtN-E4-qwW" firstAttribute="top" secondItem="X25-Oa-YWG" secondAttribute="bottom" constant="80" id="Ccq-8K-zSN"/>
+                            <constraint firstItem="Tcw-Pd-kNL" firstAttribute="trailing" secondItem="X25-Oa-YWG" secondAttribute="trailing" constant="80" id="FQf-nl-scr"/>
+                            <constraint firstItem="dtN-E4-qwW" firstAttribute="leading" secondItem="Tcw-Pd-kNL" secondAttribute="leading" constant="40" id="Twe-Ye-MZt"/>
+                            <constraint firstItem="Tcw-Pd-kNL" firstAttribute="trailing" secondItem="dtN-E4-qwW" secondAttribute="trailing" constant="40" id="dUt-BY-CNX"/>
+                            <constraint firstItem="X25-Oa-YWG" firstAttribute="top" secondItem="Tcw-Pd-kNL" secondAttribute="top" constant="100" id="y3r-yN-8e7"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="JxQ-8x-Tm4"/>
+                    <connections>
+                        <outlet property="animationView" destination="X25-Oa-YWG" id="y5o-wt-Pcq"/>
+                        <outlet property="backBtn" destination="dtN-E4-qwW" id="DTn-aX-j96"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j12-Gw-TZ7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2392.753623188406" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Card" width="302" height="405"/>
+        <image name="xmark.circle.fill" catalog="system" width="128" height="121"/>
+        <namedColor name="BG">
+            <color red="0.95686274509803926" green="0.94901960784313721" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Button">
+            <color red="0.21568627450980393" green="0.019607843137254902" blue="0.62745098039215685" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="SecondaryBG">
+            <color red="0.88235294117647056" green="0.87450980392156863" blue="0.90588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Text">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

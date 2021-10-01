@@ -1,0 +1,24 @@
+PODS:
+  - Hero (1.6.1)
+  - lottie-ios (3.2.2)
+  - ZLSwipeableViewSwift (0.0.9)
+
+DEPENDENCIES:
+  - Hero
+  - lottie-ios
+  - ZLSwipeableViewSwift
+
+SPEC REPOS:
+  trunk:
+    - Hero
+    - lottie-ios
+    - ZLSwipeableViewSwift
+
+SPEC CHECKSUMS:
+  Hero: 215865ba3ae41dd9bb08cd6c60a645529c6fc94b
+  lottie-ios: a033bb989eea77d9f99cc4e2bbdd3788229761ad
+  ZLSwipeableViewSwift: 0d4f2061d36e6daee2b3da8977e0906feee0383d
+
+PODFILE CHECKSUM: fa67bba6f7687b3f40c3eca3714d5e866a0f6b6a
+
+COCOAPODS: 1.11.2
