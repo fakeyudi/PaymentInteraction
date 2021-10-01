@@ -1,7 +1,7 @@
 # PaymentInteraction
 ## Payment Portal Interaction
 
-![App Icon](./Cards Animation/MainIcon.png)
+![App Icon](./Cards%20%Animation/MainIcon.png)
 
 **This Interaction was built keeping in mind _Usability_,_Clean UI_,_Natural Response_.**
 
